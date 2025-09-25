@@ -74,16 +74,71 @@ form{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.movies{
+.onboarding-img{
     width: 100px;
     opacity: 25%;
 }
-.welcome{
+.welcome, .watchlist-welcome{ 
+    margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20%;
 }
 main{
     position: relative;
+}
+.movie-card{
+    display: flex;
+    border-bottom: 1px solid #6c757d;
+    margin-bottom: 10px;
+}
+.poster img{
+    width: 99px;
+    height: 147.5px;
+}
+.movie-info{
+    padding-left: 20px;
+    padding-top: 0;
+    width: 342px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.title{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+.genre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+p, h2{
+    margin: 5px 0;
+}
+.description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: #6B7280;
+}
+.fa-star{
+    color: gold;
+}
+.movie-not-found img{
+    width: 100%;
+}
+.watchlist-btn{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
 }
