@@ -65,7 +65,7 @@ function renderMovieCard(filmData){
 // Event listener for the Search button
 searchBtn.addEventListener("click", async(e) => {
     e.preventDefault();
-    const response = await fetch(`http://www.omdbapi.com/?apikey=a1285471&s=${searchField.value}`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=a1285471&s=${searchField.value}`);
     const data = await response.json();
     
     if (data.Response === "True") {
@@ -74,7 +74,7 @@ searchBtn.addEventListener("click", async(e) => {
 
         // Fetch details for each movie in parallel to improve performance
         const moviePromises = movieListPlaceHolder.map(imdbID => 
-            fetch(`http://www.omdbapi.com/?apikey=a1285471&i=${imdbID}`).then(res => res.json())
+            fetch(`https://www.omdbapi.com/?apikey=a1285471&i=${imdbID}`).then(res => res.json())
         );
 
         const movieDataList = await Promise.all(moviePromises);

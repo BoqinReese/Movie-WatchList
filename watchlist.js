@@ -56,7 +56,7 @@ async function renderWatchlistPage() {
     if(watchlistMovieIds.length > 0){
         // Fetch movie details from the stored IDs
         const moviePromises = watchlistMovieIds.map(imdbID => 
-            fetch(`http://www.omdbapi.com/?apikey=a1285471&i=${imdbID}`).then(res => res.json())
+            fetch(`https://www.omdbapi.com/?apikey=a1285471&i=${imdbID}`).then(res => res.json())
         );
 
         const movieDataList = await Promise.all(moviePromises);
