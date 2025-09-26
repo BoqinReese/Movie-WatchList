@@ -136,7 +136,7 @@ p, h2{
 .movie-not-found img{
     width: 100%;
 }
-.remove-btn{
+.remove-btn, .watchlist-btn{
     display: flex;
     gap: 5px;
     align-items: center;
